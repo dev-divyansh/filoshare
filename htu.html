@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> How to use FiloShare</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #07182E;
+            color: #0e0d0d;
+        }
+
+        .logo-image {
+          margin-right: 20px;
+        }
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000; /* Ensure it's above other content */
+        }
+        .navbar .card {
+            background-color: #07182E;
+        }
+        .container {
+            margin-top: 100px; /* Adjust this value to make content visible below navbar */
+            padding-top: 0.1px;
+        }
+       
+
+    </style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+     <a href="/"> <img src="{{ url_for('static', filename='images/logo.png') }}" height="40px" max-width="20%" class="logo-image" mr-5></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="/" class="nav-link" style="color: white;" >Home</a>
+              </li>
+          <li class="nav-item">
+            <a href="/htu" class="nav-link" style="color: white;" >How to use</a>
+          </li>
+          <li class="nav-item">
+          <a href="/pricing" class="nav-link " style="color: white;" >Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a href="/about" class="nav-link " style="color: white;" >About us</a>
+            </li>
+          <li class="nav-item">
+            <a href="/troubleshooting" class="nav-link " style="color: white;" >TroubleShoot</a>
+            </li>
+            <li class="nav-item">
+              <a href="/contact" class="nav-link" style="color: white;" >Contact</a>
+              </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container my-5"></div>
+  <div class="container my-5"></div>
+
+  <div class="container mt-5">
+    <h2 class="mb-4" style="color: aliceblue;">How to Use FiloShare</h2>
+  
+    <!-- Step 1: Run FiloShare Desktop App -->
+    <div class="card mb-3">
+      <div class="card-header">
+        Step 1: Run the FiloShare Desktop App
+      </div>
+      <div class="card-body">
+        <p>The first step is to run the FiloShare desktop app on your computer.</p>
+      </div>
+    </div>
+  
+    <!-- Step 2: Get Connection URL -->
+    <div class="card mb-3">
+      <div class="card-header">
+        Step 2: Obtain Connection URL
+      </div>
+      <div class="card-body">
+        <p>Once the app is running, you will see a connection URL displayed on the home page. This URL should be shared with other devices you want to connect with.</p>
+        <p>Open the URL in the web browser of all other devices you want to share files with, such as your phone or other computers. Make sure that all devices are connected to the same network. Devices connected via a hotspot are also considered on the same network.</p>
+      </div>
+    </div>
+  
+    <!-- Step 3: Share or Download Files -->
+    <div class="card">
+      <div class="card-header">
+        Step 3: Share or Download Files
+      </div>
+      <div class="card-body">
+        <p>Once all devices are connected, you can start sharing files. You can also download files shared by others. When you are done, simply close the web browser.</p>
+      </div>
+    </div>
+  
+  </div>
+  <div class="container my-5"></div>
+  <div class="container my-5"></div>
+  <div class="container text-center">
+      <h6 style="color: white;">Made with ❤️ by Divyansh</h6>
+    <!-- Some Bootstrap links -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
