@@ -17,11 +17,14 @@
             text-decoration: none;
         }
         body{
-           background-color: #07182E;
-           color: #03a9f4;;
+            background-color: #ffffff;
+            color: #03a9f4;
+            margin-left: 20px;
+            margin-right: 20px;
         }
         .card{
             background-color: #07182E;
+            color: #ffffff;
         }
         .logo-image {
           margin-right: 20px;
@@ -39,74 +42,170 @@
         .container {
             margin-top: 100px; /* Adjust this value to make content visible below navbar */
         }
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            width: 260px;
+            padding: 20px 1px;
+            margin: 10px 5px; /* Decreased margin */
+            text-align: center;
+            position: relative;
+            cursor: pointer;
+            box-shadow: 0 10px 15px -3px rgba(33,150,243,.4),0 4px 6px -4px rgba(33,150,243,.4);
+            border-radius: 10px;
+            background-color: #6B6ECC;
+            background: linear-gradient(45deg, #04051dea 0%, #2b566e 100%);
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .content .price {
+            color: white;
+            font-weight: 800;
+            font-size: 50px;
+            text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.42);
+        }
+
+        .content .description {
+            color: rgba(255, 255, 255, 0.6);
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        .content .title {
+            font-weight: 800;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.64);
+            margin-top: 10px;
+            font-size: 25px;
+            letter-spacing: 1px;
+        }
+        body {
+          overflow: scroll;
+        }
     </style>
 </head>
 <body>
 
-  <script>
-    setTimeout(function(){
-        location.reload();
-    }, 27000); // Refresh every 27 seconds
-</script>
-
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container-fluid">
-    <img src="./logo.png" height="40px" max-width="20%" class="logo-image" mr-5>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-          <li class="nav-item">
-              <a href="./index.html" class="nav-link" style="color: white;" >Home</a>
-          </li>
-        <li class="nav-item">
-          <a href="./htu.html" class="nav-link" style="color: white;" >How to use</a>
-        </li>
-        <li class="nav-item">
-        <a href="./pricing.html" class="nav-link " style="color: white;" >Pricing</a>
-        </li>
-        <li class="nav-item">
-          <a href="./troubleshooting-filoshare.html" class="nav-link " style="color: white;" >TroubleShoot</a>
-          </li>
-        <li class="nav-item">
-          <a href="./about.html" class="nav-link" style="color: white;" >About</a>
-          </li>
-          <li class="nav-item">
-            <a href="./contact.html" class="nav-link" style="color: white;" >Contact</a>
-            </li>
-      </ul>
+    <div class="container-fluid">
+        <img src="./logo.png" height="40px" max-width="20%" class="logo-image" mr-5>
     </div>
-  </div>
 </nav>
 
 <div class="container my-5"></div>
 
 <div class="container text-center">
-    <h2 style="color:03a9f4;"> Seamlessly Share Files of Any Size Across Devices!</h2>
+    <h2 style="color:03a9f4;">filoshare: Empowering Seamless File Sharing</h2>
     <div class="container my-5"></div>
 
-    <div style="color: #afaaaa;">
-    <ul>
-      Make sure the receiver and sender device must be on the same network.
-      </ul>
-      <ul>
-      Open any browser on your receiver's device.
-      Enter the URL <b>" http://{{ name }} " </b> in  the browser.<br/> This would
-      launch the application.<br/> You are good to go! <br/>
-  </ul>
+    <div class="container my-5"></div>
 </div>
-  <div class="container my-5"></div>
-    
+<hr/>
+<h5 style="color: #07182E; text-align: center;">Download filoshare</h5>
+<div class="container text-align-center">
+    <div class="row justify-content-center"> <!-- Added justify-content-center to center the cards -->
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <p class="card-text">Run filoshare as a container using the Docker image</p>
+                    <a href="https://hub.docker.com/r/devdivyansh/filoshare" class="btn btn-primary">Docker Hub</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <p class="card-text">Download filoshare for windows</p>
+                    <a href="#" class="btn btn-primary">Upcoming</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+          <div class="card">
+              <div class="card-body">
+                <p class="card-text">Download filoshare for linux debian</p>
+                <a href="#" class="btn btn-primary">Upcoming</a>
+              </div>
+          </div>
+      </div>
+    </div>
+</div>
+<div class="container my-5"></div>
+
+<hr style="color: #07182E;"/>
+<div style="color: #292727;">
+    <h5 style="text-align: center; font-weight: bold;">Why filoshare is the game-changer you've been waiting for:</h5>
     <br/>
     <br/>
-    
+    <ul>
+        <h6>Effortless Connectivity: </h6>
+        <p>Bid farewell to the complexities of logging into WhatsApp Web on your PC to share files. Filoshare simplifies the process, ensuring effortless connectivity between your phone and computer.</p>
+    </ul>
+    <br/>
+    <br/>
+    <ul>
+        <h6>Unleash Unlimited Potential:  </h6>
+        <p>Break free from file size constraints. With Filoshare, you can share files of up to 10GB without worrying about limitations or additional charges. Experience the freedom to share what you want, when you want.</p>
+    </ul>
+    <br/>
+    <br/>
+    <ul>
+        <h6>Speed of Light Transfers:</h6>
+        <p>Transform the way you transfer files. Filoshare boasts lightning-fast transfer speeds, allowing you to share even large files in seconds. Say goodbye to tedious waiting times and hello to productivity on your terms.</p>
+    </ul>
+    <br/>
+    <br/>
+    <ul>
+        <h6>Privacy at its Core:</h6>
+        <p>Safeguard your privacy with Filoshare. No more compromising your data by sharing through third-party platforms. Filoshare prioritizes your privacy, ensuring your files remain confidential and secure.</p>
+    </ul>
+    <br/>
+    <br/>
+    <ul>
+        <h6>Multi-Device Harmony: </h6>
+        <p>Seamlessly connect multiple devices and share files effortlessly. Whether it's collaborating with colleagues or sharing memories with loved ones, Filoshare enables seamless connectivity across all your devices.</p>
+    </ul>
 
-
+</div>
+<div class="container my-5 justify-content-center"></div>
+<hr style="color: #07182E;"/>
+<h4 style="color: black; text-align: center;">Pricing</h4>
+<div class="row justify-content-center">
+    <div class="card">
+        <div class="content">
+            <div class="title">free edition</div>
+            <div class="price">0 INR</div>
+            <div class="description">Experience all the features unrestricted by file size, up to 10GB.</div>
+        </div>
+    </div>
+</div>
+<hr/>
+<div class="container" style="color: black;">
+  <div class="row justify-content-center">
+      <div class="col-md-6">
+          <div class="contact-card text-center">
+              <h2>Contact Developer</h2>
+              <div class="contact-info">
+                  <p>Email: <a href="mailto:dev.pratap3250@gmail.com">dev.pratap3250@gmail.com</a></p>
+                  <p>LinkedIn: <a href="https://www.linkedin.com/in/developer" target="_blank">Divyansh Pratap Singh</a></p>
+              </div>
+              <p>Feel free to reach out for any queries, collaborations or sponsorship!</p>
+              <div class="contact-link">
+                  <a href="mailto:dev.pratap3250@gmail.com">Send an Email</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
 <div class="container my-5"></div>
 
 <div class="container text-center">
-    <h6 style="color: white;">Made with ❤️ by Divyansh</h6>
+    <h6 style="color: rgb(5, 5, 5);">Made with ❤️ by Divyansh</h6>
 </div>
 
 <div class="container my-5"></div>
