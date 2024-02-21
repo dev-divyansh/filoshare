@@ -1,7 +1,14 @@
-# filoshare
+# [filoshare](https://dev-divyansh.github.io/filoshare)
 Seamlessly Share Files of Any Size Across Devices!
 
-#### [Website](https://dev-divyansh.github.io/filoshare/)
+<br/>
+
+<a href="https://www.producthunt.com/posts/filoshare?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-filoshare" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=440791&theme=light" alt="filoshare - Share&#0032;files&#0032;seamlessly&#0032;between&#0032;PC&#0044;&#0032;mobile&#0044;&#0032;and&#0032;all&#0032;devices | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+
+<br/>
+
+
+<!-- [Website](https://dev-divyansh.github.io/filoshare/) -->
 <hr>
 
 ## Get filoshare
