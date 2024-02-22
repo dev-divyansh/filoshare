@@ -1,4 +1,4 @@
-# [filoshare](https://dev-divyansh.github.io/filoshare)
+# [filoshare - website](https://dev-divyansh.github.io/filoshare)
 Seamlessly Share Files of Any Size Across Devices!
 
 <br/>
